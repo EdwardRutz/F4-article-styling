@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Learning Git and Terminal</title>
+</head>
+
+<body>
+	<h1>Learning Git and Terminal</h1>
+
+	<article>
+		<h2>Article #1:  What is Git</h2>
+		<p>Git  is a version control system (VCS) for tracking changes in computer files and coordinating work on those files among multiple people. It is primarily used for source code management in software development, but it can be used to keep track of changes in any set of files. As a distributed revision control system it is aimed at speed,[9] data integrity, and support for distributed, non-linear workflows</p>
+
+		<p>SOURCE: <a href="https://en.wikipedia.org/wiki/Git">Wikipedia: Git</a></p>
+
+		<p>Wikipedia,  July 9, 2017 </p>
+	</article>
+
+	<article>
+		<h2>Article #2:  Why Use the Terminal or Command Prompt?</h2>
+		<p>Using terminal's command-line interface and linux commands is an easy way to increase productivity.</p>
+
+		<p>The Terminal is similiar to the Windows Command Prompt and on OS X comes as a default with bash (Bourne Again Shell).  In the shell you can run UNIX commands, mostly Linux commands.</p>
+
+		<p>The Internets,  July 9, 2017 </p>
+	</article>
+
+	<article>
+		<h2>Article #3:  Git Quick Start</h2>
+		<a href="https://rogerdudler.github.io/git-guide/">A Simple Guide to Git</a>
+		<p>Roger Dudler,  2015</p>
+	</article>
+
+	<article>
+		<h2>Article #4:  Git Commands</h2>
+		GIT CHEAT SHEET:  https://education.github.com/git-cheat-sheet-education.pdf
+
+		<h3>REPOSITORY</h3>
+		CREATE REPOSITORY:  git init [project_name] - initializes a new repository.
+		CLONE:  git clone <project_to_clone> <new_projected_name-clone>
+		git remote
+		git remote add <name> ~<filepath>
+		git push - push your latest changes to a remote repository.
+		git pull - pull the latest changes from a remote repository to your repository.
+
+		<h3>CREATE REPOSITORY</h3>
+		mkdir <dir name> or echo "# <dir name>” >> README.md
+		move to dir
+		git init
+		touch README.md
+		git add README.md
+		git commit -m “message”
+		git remote add origin https://github.com/edwardrz/dirname.git
+		git push -u origin master
+
+
+
+		<h3>BRANCHES</h3>
+		CREATE BRANCH:  git branch <branchname>
+		SWITCH BRANCHES:  git checkout branchname>
+		SEE ALL GIT BRANCHES:  git branch -a
+		CREATE A NEW BRANCH AND SWITCH TO IT: git checkout -b <branchname>
+		DELETE BRANCH:  git branch -D <branchname>
+		HEAD:  refers to the latest commit in the current branch
+
+		git status
+
+
+		git add index.html css/
+		git status  (shows files in staging area to be committed)
+		git commit -m "added css"
+		git push origin css-stuff
+
+		COMMIT ALL + MESSAGE:  git commit -a -m “this is my message.” 
+
+		GIT ADD ALL
+		git add -A is equivalent to git add .; git add -u.
+		The important point about git add . is that it looks at the working tree and adds all those paths to the staged changes if they are either changed or are new and not ignored, it does not stage any 'rm' actions.
+		git add -u looks at all the already tracked files and stages the changes to those files if they are different or if they have been removed. It does not add any new files, it only stages changes to already tracked files.
+		git add -A is a handy shortcut for doing both of those.
+
+
+		<h3>MERGE</h3>
+		SEE WHAT BRANCH YOU ARE IN:  git branch
+		SEE HISTORY OF COMMITS:  git log
+		SWITCH TO MASTER:  git checkout master
+		MERGE:  git merge <branchname>
+
+		<h3>GIT STASHING</h3>
+		git stash
+		git status
+		git stash apply to a new branch
+		git stash list 
+
+
+		<h3>MISCELLANEOUS</h3>
+		SHOW HIDDEN FILES:  ls -a
+
+		DELETE GIT FOLDER:  rm -r dirname/.git
+
+		TEXT EDITOR = nano
+		SHOW COMMIT HISTORY LOG:  git log 
+		SEE PREVIOUS COMMIT:  git checkout HEAD~1
+		TO REVIEW A COMMIT:  git checkout 5hash#s
+		GET BACK TO MASTER:  git checkout master
+
+		GITHUB
+		Use the Master Branch for code that is “finished, working and ready to go into the production version of the site.” The Master Branch is used for code ready to go live.
+
+		FEATURE BRANCHES are used for work on features, refactoring, redesigns and substantial changes.
+
+		<h3>GIT FLOW</h3>
+		[_] Try git flow to manage a projects and branches. Must install.
+		https://github.com/nvie/gitflow
+
+		git flow init
+		git flow feature start feature_name
+		git flow feature finish feature_name
+
+		git flow hotfix start name
+		git flow hotfix finish name
+		<p>Edward R.,  July 9, 2017 </p>
+	</article>
+
+	<article>
+		<h2>Article #5:  Basic Terminal Commands</h2>
+
+		<p>Rule #1 of command line</p>
+		Always know where you are
+
+		<h3>Basic commands</h3>
+			<ul>
+				<li>cd - change directory.</li>
+				<li>pwd - print working directory; show where you are.</li>
+				<li>mkdir - make directory.</li>
+				<li>ls - list contents of a directory.</li>
+				<li>clear - clear the view.</li>
+				<li>touch - create file.</li>
+				<li>cat - read the contents of a file.</li>
+				<li>cp - copy files and directories.</li>
+				<li>mv - move files and directories.</li>
+				<li>rm -rf - remove and remove files and folders (delete).</li>
+			</ul>
+		<a href="http://lorem-ipsum.perbang.dk">Lorem-Ipsum Generator</a>
+		<p>The Internets,  July 9, 2017 </p>
+	</article>
+
+<footer>
+	&copy; 2017 C21 ER 
+</footer>
+</body>
+</html>
