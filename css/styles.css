@@ -1,0 +1,108 @@
+/*******************************************************
+GLOBAL
+*******************************************************/
+body {
+	background-color: black;
+}
+
+h1 {
+	color: white;
+}
+/*******************************************************
+NAVIGATION
+*******************************************************/
+
+
+/*******************************************************
+ARTICLE: HOME
+*******************************************************/
+
+
+/*******************************************************
+ARTICLE: ONE
+*******************************************************/
+
+#artNum1 {
+	background-color: yellow;
+	font-family: monospace; 
+	font-size: 0.5em;
+	color: orange;
+	line-height:0.5em; 
+	padding: 10px;
+	border: 10px;
+	border-radius:100%;
+}
+
+
+
+/*******************************************************
+ARTICLE: TWO
+*******************************************************/
+#artNum2 {
+	background-color: orange;
+	font-family: fantasy; 
+	font-size: 1em;
+	color: peru;
+	line-height:1em; 
+	padding: 20px;
+	border:20px;
+	border-radius:80%;
+}
+
+
+/*******************************************************
+ARTICLE: THREE
+*******************************************************/
+
+#artNum3 {
+	background-color: peru;
+	font-family: cursive; 
+	font-size: 1.25em;
+	color: darkred;
+	line-height: 1.25em; 
+	padding: 30px;
+	border: 30px;
+	border-radius:60%;
+}
+
+
+/*******************************************************
+ARTICLE: FOUR
+*******************************************************/
+
+
+#artNum4 {
+	background-color: darkred;
+	font-family: sans-serif; 
+	font-size: 1.5em;
+	color: midnightblue;
+	line-height: 1.5em; 
+	padding: 40px;
+	border: 40px;
+	border-radius:40%;
+}
+
+
+/*******************************************************
+ARTICLE: FIVE
+*******************************************************/
+
+
+#artNum5 {
+	background-color: midnightblue;
+	font-family: serif; 
+	font-size: 2em;
+	color: yellow;
+	line-height: 2em; 
+	padding: 50px;
+	border: 40px;
+	border-radius:20%;
+}
+
+
+/*******************************************************
+PALETTE/THEME
+*******************************************************/
+
+
+
